@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>OutfitLiker</title>
+  </head>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+  <body>
+    <div class="login-container">
+      <form id="login-form" class="form" style="display: block">
+        <h1>Outfit Liker</h1>
+        <h2>What's Up! Login to Get Started </h2>
+        <h4>Log In or Create New Account</h4>
+        <label for="username"><b>Username</b></label>
+        <input id="username"type="text" placeholder="Enter Username" name="username" required>
+        <button type="submit" id="sign-in"> Login/Create</button>
+      </form>  
+    </div>
+    <div id="header" style="display: none">
+      <h2 id="welcome">Hey, Welcome to Outfit Liker!</h2>
+      <button id="view-profile">Your Profile</button>
+      <div id="user-profile"style="display: none">
+        <button id="new-outfit">Add a 🔥fit</button>
+        <button id="liked-imgs">❤️ Your Likes ❤️</button>
+        <button id="uploaded">Your Uploads ⬆️</button>
+        <div class="liked-imgs-container" style="display: none">
+          <h1>Your Likes</h1>
+          <ul id="liked" class="liked-cards"></ul>
+        </div>
+        <div class="uploads-container" style="display: none"><h1>Your Outfits</h1></div>
+        <div class="formContainer">
+          <form id="add-outfit-form" class="form" style="display: none">
+            <h3>Upload</h3>
+            <input type="text" name="name" placeholder="Enter Outfit Description"autocomplete="off">
+            <input type="text" name="img-url" placeholder="Enter Image Url" autocomplete="off">
+            <select name="seasons">
+              <option value="">Select Season</option>
+              <option value="Spring">Spring</option>
+              <option value="Summer">Summer</option>
+              <option value="Fall">Fall</option>
+              <option value="Winter">Winter</option>
+            </select>
+            <h4 id="currentUser"></h4>  
+            <input type="submit" value="submit" class="button">
+          </form>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div id="main-container" style="display: none">
+      <h1> 🔥Fire Fits🔥</h1>
+      <ul id="outfits" class="cards">
+      </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
