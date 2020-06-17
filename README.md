@@ -1,2 +1,2 @@
 # outfitliker
-simplified fashion instagram
+A fashion social media website
