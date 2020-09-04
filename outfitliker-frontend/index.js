@@ -306,14 +306,3 @@ function renderUploads(user){
 fetch(`http://localhost:3000/outfits`)
 .then(r =>r.json())
 .then(outfits => renderAllOutfits(outfits))
-
-
-
-
-
-
-
-
-
-
-
