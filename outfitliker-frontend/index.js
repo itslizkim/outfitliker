@@ -88,7 +88,7 @@ function handleUser(e){
     //local storage stores the user id
     })
 
-    document.querySelector("#welcome").innerText = "Hey, " + userName + " welcome to outfit liker!",
+    document.querySelector("#welcome").innerText = "Hey, " + userName + "!",
     document.querySelector("#username").innerText = userName;
 
     login = !login
