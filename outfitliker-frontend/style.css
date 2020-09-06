@@ -44,6 +44,8 @@ body {
     grid-row: 3;
     border-radius: 10px;
     font-family: 'Lekton', sans-serif;
+    font-size: medium;
+    font-style: oblique;
 }
 
 .liked-imgs-container{
