@@ -240,7 +240,7 @@ function renderOneOutfit(outfit){
     <div class="likes">
         <span class="like-count">${outfit.like_count} </span> Likes 
     </div>
-    <button data-action="like" class="like-button"> 💗LIKE </button>
+    <button data-action="like" class="like-button"> 💗 LIKE </button>
     `
     cards.append(outfitLi)
 }
